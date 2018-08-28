@@ -49,6 +49,8 @@ select option {
 	src: url(AvenirLTStd-Book.otf) format("opentype");
 	font-display: swap
 }
+
+/* body tag with styling effect for shadow at text-shadow */
 body {
 	font-family: AvenirLTStd, Consolas, "Liberation Mono", Menlo, Courier, monospace;
 	font-size: 14.5px;

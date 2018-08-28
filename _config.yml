@@ -1,9 +1,9 @@
-name: rakiBlog
+name: rakiB'slog
 description: >
     A simple jekyll theme aimed at programmers who like clean interface to write posts
     and show off some code.
 about: >
-    This is my blog site. If you are here and would like to know about me then press the link below.
+    This is my blog site. If you are here and would like to know about me then visit my website below.
 master_repo: false
 url: "http://vinitkumar.me/white-paper"
 markdown: kramdown
