@@ -3,27 +3,27 @@ layout: post
 title: "How To Use Facebook Page Albums As Image Source in Django"
 date: 2014-02-14 20:39:36 +0530
 comments: true
-categories: 
+categories:
 ---
 
-Lot of companies use Facebook for marketing their products. Facebook is mainly built around images. In fact the whole ecosystem is fueled by images. In order to scale for the vast user base of Facebook, they have done a really good job. 
+Lot of companies use Facebook for marketing their products. Facebook is mainly built around images. In fact the whole ecosystem is fueled by images. In order to scale for the vast user base of Facebook, they have done a really good job.
 
 So what if you don't want to use your own storage for uploading images and want to use Facebook for Images? It would be so cool, right?
 There are two benefits:
 
-- You don't have to spend anytime setting up an app or service to deal with images. Believe me it is a real tough problem to solve given the size and count of images. You can't put a bar on either of these two.
-- It gives your users a much user friendly way. They upload images just once on Facebook and it auto-magically appears on your website. Facebook almost never gets down so there is very good chance you will get a 99.9% uptime. 
+You don't have to spend anytime setting up an app or service to deal with images. Believe me it is a real tough problem to solve given the size and count of images. You can't put a bar on either of these two.
+It gives your users a much user friendly way. They upload images just once on Facebook and it auto-magically appears on your website. Facebook almost never gets down so there is very good chance you will get a 99.9% uptime. 
 
 So, In order to fix this problem last year I created a Ajax based plugins to fetch images from Facebook album. It asked user to enter album URL and name. But there was an issue with this approach. In order to get access to Facebook graph database it has to get access tokens and each access token only last two months. Plus, it collapsed when it faced IE, since there is unsolvable CORS issue with IE < 9 (our 50% client base for that project).
 
 
 It was a tough problem to solve. But i finally found some good articles and projects on Internet. One such project was django-fbgallery. It used a really neat approach to get the Facebook images server side and renders it the page purely server side. It not only solved the IE issue, but also the quality and speed of image loading became instant.
 
-But there was an issue with this app, it used URLS to render the albums and spoiled the pretty URLS that you would like for pages in Django. So I took the core part of the app ( the Facebook interaction part) and made a sweet CMS plugin out of it. 
+But there was an issue with this app, it used URLS to render the albums and spoiled the pretty URLS that you would like for pages in Django. So I took the core part of the app ( the Facebook interaction part) and made a sweet CMS plugin out of it.
 
 Here is the code to make it all work:
 
-```python Facebook.py 
+```python Facebook.py
 from django.conf import settings
 from django.core.cache import cache
 import urllib2, urllib
@@ -39,7 +39,7 @@ def get_fql_result(fql):
     data = None
     if cache_expires > 0:
         data = cache.get(cachename)
-    if data == None: 
+    if data == None:
         options = {
             'query':fql,
             'format':'json',
@@ -70,7 +70,7 @@ def display_album(album_id):
 I asked user to enter the album ID and name, then rendered the album using the plugin here:
 
 
-```python cms_plugins.py 
+```python cms_plugins.py
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
 from django.utils.translation import ugettext_lazy as _
@@ -96,7 +96,7 @@ plugin_pool.register_plugin(FacebookGalleryPlugin)
 
 You could choose whatever template you want. It's entirely upto you.  
 
-Here is the image of this plugin live in action: 
+Here is the image of this plugin live in action:
 
 <a href="http://imgur.com/dmrxcXh"><img src="http://i.imgur.com/dmrxcXh.png" title="Hosted by imgur.com" /></a>
 
