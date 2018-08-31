@@ -11,19 +11,19 @@
 
 - Post Detail View
 
-![post detail](https://cldup.com/mERDZPBshM-3000x3000.png)
+![post detail](https://raw.githubusercontent.com/nsdffd/blogtest/master/blog.png)
 
 ## How to use White Paper
 
 Fork the repo to your account by clicking the button on the top right as shown in the image:
 
-![fork](https://cldup.com/vOF0oaUkh5-3000x3000.png) and then where you want to fork it as shown below.
+![fork](https://raw.githubusercontent.com/nsdffd/blogtest/master/fork.png) and then where you want to fork it as shown below.
 
 Next, Go the the project settings and change the repository name to `<username>.github.io` where username is your username.
 
 Change these entries in the `_config.yml` file:
 
-Also, change this line in head.html [link](https://github.com/vinitkumar/white-paper/blob/9ad021a8f94c6240351bd57eda301b5f207e554e/_includes/head.html#L28)
+Also, change this line in head.html [link](https://github.com/nsdffd/blogtest/blob/master/_includes/head.html#L27)
 
 ```html
 <!-- From this -->
@@ -50,7 +50,7 @@ Also, change all other fields in the `_config.yml` file to your choice.
 This theme requires you to install couple of tools first to setup jekyll locally.
 
 ```$
-git clone git@github.com:vinitkumar/white-paper.git
+git clone git@github.com:nsdffd/blogtest.git
 
 # If you have ruby installed.
 gem install jekyll bundler
@@ -98,7 +98,7 @@ concat: {
 ```
 
 ## License
-* see [LICENSE](https://github.com/vinitkumar/white-paper/blob/gh-pages/LICENSE) file
+* see [LICENSE](https://github.com/nsdffd/blogtest/blob/master/LICENSE) file
 
 ## Version
 * Version 4.0.2
