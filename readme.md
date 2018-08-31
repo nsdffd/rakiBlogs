@@ -64,7 +64,10 @@ jekyll serve
 # on running the serve script, the site will be live on
 http://127.0.0.1:4000
 ```
-This theme uses grunt to concat & minify the css for best performance. In order to prepare the css build. Run `grunt`
+This theme uses grunt to concat & minify the css for best performance. In order to prepare the css build. Run
+```
+grunt
+```
 It will create a main.min.css file in the css folder.
 
 ### Switch Syntax Highlighting.
@@ -107,4 +110,4 @@ concat: {
 #### Developer
 
 * Homepage: http://blogtest.rakibfiha.me
-* e-mail: mrahman06@qub.ac.uk
+* E-mail: mrahman06@qub.ac.uk
