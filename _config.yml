@@ -5,9 +5,10 @@ description: >
 about: >
     This is my blog site. If you are here and would like to know about me then visit my website below.
 master_repo: false
-url: "/"
 markdown: kramdown
 highlighter: rouge
+url: "nsdffd.github.io"
+rtl:
 
 plugins: ['jekyll-paginate', 'jekyll-gist', 'jekyll-feed']
 
