@@ -1,6 +1,6 @@
-# White Paper
+# rakiB'slog
 
-**White Paper** is a theme for Jekyll. It is built keeping content in focus and is best for writers/developers who also like to share code with their essays.
+**rakiB'slog** is a theme for Jekyll. It is built keeping content in focus and is best for writers/developers who also like to share code with their essays. The theme was edited from the original theme named as **White Paper**
 
 # White Paper in Action
 
@@ -101,11 +101,10 @@ concat: {
 * see [LICENSE](https://github.com/vinitkumar/white-paper/blob/gh-pages/LICENSE) file
 
 ## Version
-* Version 4.0.0
+* Version 4.0.2
 
 ## Contact
 #### Developer
 
-* Homepage: http://vinitkumar.me
-* e-mail: vinit1414.08@bitmesra.ac.in
-* Twitter: [@vinitkme](https://twitter.com/vinitkme "vinitkme on twitter")
+* Homepage: http://blogtest.rakibfiha.me
+* e-mail: mrahman06@qub.ac.uk
