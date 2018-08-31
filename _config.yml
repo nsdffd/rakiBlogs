@@ -7,7 +7,7 @@ about: >
 master_repo: false
 markdown: kramdown
 highlighter: rouge
-url: "nsdffd.github.io"
+url: "https://nsdffd.github.io"
 rtl:
 
 plugins: ['jekyll-paginate', 'jekyll-gist', 'jekyll-feed']
