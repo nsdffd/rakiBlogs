@@ -1,6 +1,6 @@
 # rakiB'slog
 
-**rakiB'slog** is a theme for Jekyll. It is built keeping content in focus and is best for writers/developers who also like to share code with their essays. The theme was edited from the original theme named as **White Paper**
+**rakiB'slog** is a theme for Jekyll. It is built keeping content in focus and is best for writers/developers who also like to share code with their essays. The theme was edited from the original theme named as **White Paper** by Vinit Kumar
 
 # rakiB'slog in Action
 
