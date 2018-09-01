@@ -1,0 +1,38 @@
+title: RakiBlogs
+description: > # this means to ignore newlines until "baseurl:"
+  This is the blogs written by Rakib Fiha of RakibFiha.com, RakibFiha's blogs
+  cover a wide vareity of topics from new emerging technology like Blockchain,
+  AI to Aerospace engineering. I will also add things that I am currently working on.
+
+permalink: ':title/'
+# baseurl: "/flexible-jekyll" # the subpath of your site, e.g. /blog
+url: "https://nsdffd.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
+
+# Author Settings
+author: Rakib Fiha # add your name
+author-img: rakib-fiha.jpg # add your photo
+about-author: Hello World, I'm Rakib Fiha. I am a blockchain and aerospace engineer who is always hungry to keep learning. # add description
+social-twitter: RakibFiha # add your Twitter handle
+social-facebook: RakibFiha # add your Facebook handle
+social-github: RakibFiha # add your Github handle
+social-linkedin: RakibFiha # add your Linkedin handle
+social-email: mrahman06@qub.ac.uk # add your Email address
+
+# Disqus
+discus-identifier: RakibFiha # add your discus identifier
+
+# Tracker
+analytics: Rakib Fiha # Google Analytics
+
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  # - jemoji
+
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
